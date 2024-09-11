@@ -5,8 +5,7 @@ module.exports = {
     extend: {
       fontFamily: {
         // Ajouter la police Roboto
-        'roboto': ['Roboto', 'sans-serif'],
-        'lato': ["Lato"]
+        roboto: ['Roboto' , "system-ui"],
       },
     },
   },
