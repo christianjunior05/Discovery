@@ -1,22 +1,26 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['./src/**/*.{html,js}',],
+  content: ['./src/**/*.{html,js}'],
   theme: {
     extend: {
       fontFamily: {
         // Ajouter la police Roboto
-        roboto: ['Roboto' , "system-ui"],
-      },
-      animation: {
-        'infinite-scroll': 'infinite-scroll 25s linear infinite',
+        roboto: ['Roboto', 'system-ui'],
       },
       keyframes: {
         'infinite-scroll': {
-          from: { transform: 'translateX(0)' },
-          to: { transform: 'translateX(-100%)' },
-        }
-    },
+          '0%': {
+            transform: 'translateX(0)',
+          },
+          '100%': {
+            transform: 'translateX(-100%)',
+          },
+        },
+      },
+      animation: {
+        'infinite-scroll': 'infinite-scroll 10s linear infinite',
+      },
+    }, 
   },
   plugins: [],
-}
-}
+};

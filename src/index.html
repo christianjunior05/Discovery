@@ -3,46 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Responsive Page</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container mx-auto   text-center w-[370px]">
-        <h1 class="pt-10 font-roboto text-4xl font-bold">Dévcouvrez la beauté <br> en parcourant le monde </h1>
-        <p class="pt-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
-            Unde aut sapiente doloremque, officia pariatur a autem incidunt ipsum, eveniet suscipit saepe? Ducimus, iusto aut repellendus asperiores 
-            dolore sapiente consectetur quas! Nam delectus a ipsum? Qod.</p>
-            <div class="button bg-slate-900 rounded-2xl w-[140px] mx-auto text-white p-1 mt-5">Explore </div>
-    </div>
-    <div class="container mx-auto grid grid-cols-4 gap-4 mt-10 animate-infinite-scroll" aria-hidden="true">
-        <div>
-            <img  src="/images/1.png" alt="">
-        </div>
-        <div>
-            <img  src="/images/2.png" alt="">
-        </div>
-        <div>
-            <img  src="/images/3.png" alt="">
-        </div>
-        <div>
-            <img  src="/images/4.png" alt="">
-        </div>
-        <div>
-            <img  src="/images/5.png" alt="">
-        </div>
-        <div>
-            <img  src="/images/6.png" alt="">
-        </div>
-        <div>
-            <img  src="/images/7.png" alt="">
-        </div>
-        <div>
-            <img  src="/images/8.png" alt="">
+    <!-- Section Texte -->
+    <div class="container mx-auto px-4 text-center max-w-lg">
+        <h1 class="pt-10 font-roboto text-3xl md:text-4xl font-bold">Découvrez la beauté <br> en parcourant le monde</h1>
+        <p class="pt-4 text-sm md:text-base">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde aut sapiente doloremque, officia pariatur a autem incidunt ipsum, eveniet suscipit saepe?
+            Ducimus, iusto aut repellendus asperiores dolore sapiente consectetur quas! Nam delectus a ipsum? Qod.
+        </p>
+        <div class="bg-slate-900 rounded-2xl w-[140px] mx-auto text-white p-2 mt-5 mb-5 cursor-pointer hover:bg-slate-700">
+            Explore
         </div>
     </div>
+
+    <!-- Section Images -->
+    <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 px-4 mt-8">
+        <div><img src="/images/1.png" alt=""></div>
+        <div><img src="/images/2.png" alt=""></div>
+        <div><img src="/images/3.png" alt=""></div>
+        <div><img src="/images/4.png" alt=""></div>
+    </div>
+
+    <div class="container mx-auto grid grid-cols-2 md:grid-cols-4 gap-2 px-4 mt-4">
+        <div><img src="/images/5.png" alt=""></div>
+        <div><img src="/images/6.png" alt=""></div>
+        <div><img src="/images/7.png" alt=""></div>
+        <div><img src="/images/8.png" alt=""></div>
+    </div>
+
 </body>
 </html>
